@@ -1,0 +1,51 @@
+#include <stdio.h>
+int main() {
+    int score = 0;
+
+    printf("Welcome to Kaun Banega Crorepati!\n\n");
+
+    // Question 1
+    printf("Question 1: What is the capital of France?\n");
+    printf("A. London\tB. Paris\tC. Rome\tD. Berlin\n");
+    char answer1 = 'B';
+    char choice1;
+    printf("Your answer (A/B/C/D): ");
+    scanf(" %c", &choice1);
+    if (choice1 == answer1) {
+        printf("Correct!\n");
+        score += 1000;
+    } else {
+        printf("Incorrect. The correct answer is B. Paris.\n");
+    }
+
+    // Question 2
+    printf("\nQuestion 2: How many continents are there in the world?\n");
+    printf("A. 5\tB. 6\tC. 7\tD. 8\n");
+    char answer2 = 'C';
+    char choice2;
+    printf("Your answer (A/B/C/D): ");
+    scanf(" %c", &choice2);
+    if (choice2 == answer2) {
+        printf("Correct!\n");
+        score += 2000;
+    } else {
+        printf("Incorrect. The correct answer is C. 7.\n");
+    }
+
+    // Question 3
+    printf("\nQuestion 3: Who wrote 'Romeo and Juliet'?\n");
+    printf("A. Charles Dickens\tB. Jane Austen\tC. William Shakespeare\tD. Leo Tolstoy\n");
+    char answer3 = 'C';
+    char choice3;
+    printf("Your answer (A/B/C/D): ");
+    scanf(" %c", &choice3);
+    if (choice3 == answer3) {
+        printf("Correct!\n");
+        score += 5000;
+    } else {
+        printf("Incorrect. The correct answer is C. William Shakespeare.\n");
+    }
+
+    printf("\nCongratulations! You've completed the game.\n");
+    printf("Your total score is: %d\n", score);
+    return 0;
